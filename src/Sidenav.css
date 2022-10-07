@@ -40,5 +40,23 @@ body{
     display: flex;
     background-color: greenyellow;
     height: calc(100% - 35px);
+    justify-content: center;
 }
+
+.nav-container .main-menu-container .menu-items{
+    display: flex;
+}
+
+.nav-container .main-menu-container .menu-items ul{
+    list-style: none;
+}
+
+.nav-container .main-menu-container .menu-items .menu-list li a{
+    text-decoration: none;
+    color: orangered;
+    display: flex;
+    flex-direction: row;
+}
+
+
 
