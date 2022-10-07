@@ -10,7 +10,8 @@ export default function MenuItems(props) {
                         <div className='menu-icon'>
                             {props.menuIcon}
                         </div>
-                        {props.menuName}</a>
+                        <span>{props.menuName}</span>
+                    </a>
                 </li>
             </ul>
         </div>

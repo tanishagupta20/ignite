@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import MenuItems from './MenuItems';
 import './Sidenav.css'
-import {eventsLogo} from './assets/image/flags-svgrepo-com.svg'
+import eventsLogo from './assets/image/flags-svgrepo-com.svg'
 
 function Sidenav() {
 
@@ -13,13 +13,13 @@ function Sidenav() {
 
                 {/* B U R G E R     I C O N */}
                 <div onClick={() => setInactive(!inactive)} className='burger-icon' >
-                    <i style={inactive ? { transform: "rotate(360deg)", justifyContent: "flex-start" } : { transform: "rotate(0deg)" }} className="bi bi-list animate-burger"></i>
+                    <i style={inactive ? { transform: "rotate(180deg)", justifyContent: "flex-start" } : { transform: "rotate(0deg)" }} className="bi bi-list animate-burger"></i>
                 </div>
 
                 {/* A D D I N G    M E N U S */}
                 <MenuItems menuName="Home" menuIcon={<i class="bi bi-house"></i>} />
                 <MenuItems menuName="About" menuIcon={<i class="bi bi-info-lg"></i>} />
-                <MenuItems menuName="Events" menuIcon = {eventsLogo} />
+                <MenuItems menuName="Events" menuIcon = {<img style={{width: '30px'}} src={eventsLogo}/>} />
                 <MenuItems menuName="Sponsors" menuIcon={<i class="bi bi-info-lg"></i>} />
 
 

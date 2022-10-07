@@ -18,7 +18,7 @@ function App() {
 
 function Home(){
   return(
-    <div style = {{width : "calc(100% - 250px)", backgroundColor : "transparent", height : "100vh"} }></div>
+    <div style = {{width : "calc(100% - 300px)", backgroundColor : "transparent", height : "100vh"} }></div>
   )
 }
 
