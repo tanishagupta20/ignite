@@ -63,5 +63,9 @@ body{
 }
 
 .nav-container .main-menu-container .menu-items .menu-list .menu-name{
+    /* display: none; */
+}
+
+.hidden{
     display: none;
 }
