@@ -14,34 +14,35 @@ function Sidenav() {
                     <span className='burger' onClick={toggleSideNav}><i class="bi bi-list"></i></span>
                 </div>
 
-                <div className='main-menu-container'>
+                <div className='main-menu-container' onClick={toggleSideNav}>
                     <div className='menu-items'>
                         <ul className='menu-list'>
-                            <li>
-                                <a href='#'>
+                            <li style={!inactive ? {width : "210px"} : {width : "20px"}} className = "home-icon">
+                                <a href='#' title={inactive ? 'Home' : ''}>
                                     <div className='menu-icon imported-i'>
                                         <i class="bi bi-house"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Home</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href='#'>
+                            <li style={!inactive ? {width : "210px"} : {width : "20px"}}>
+                                <a href='#' title={inactive ? 'About' : ''}>
                                     <div className='menu-icon imported-i'>
                                         <i class="bi bi-info-square"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>About</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href='#'><div className='menu-icon'>
-                                    <img height={14.5} src={EventsLogo} />
-                                </div>
+                            <li style={!inactive ? {width : "210px"} : {width : "20px"}}>
+                                <a href='#' title={inactive ? 'Events' : ''}>
+                                    <div className='menu-icon'>
+                                        <img height={14.5} src={EventsLogo} />
+                                    </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Events</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href='#'>
+                            <li style={!inactive ? {width : "210px"} : {width : "20px"}}>
+                                <a href='#' title={inactive ? 'Sponsors' : ''}>
                                     <div className='menu-icon imported-i'>
                                         <i class="bi bi-info-square"></i>
                                     </div>
