@@ -47,7 +47,7 @@ body{
     display: flex;
 }
 
-.nav-container .main-menu-container .menu-items ul{
+.nav-container .main-menu-container .menu-items .menu-list{
     list-style: none;
 }
 
@@ -58,5 +58,10 @@ body{
     flex-direction: row;
 }
 
+.nav-container .main-menu-container .menu-items .menu-list .imported-i{
+    font-size: 20px;
+}
 
-
+.nav-container .main-menu-container .menu-items .menu-list .menu-name{
+    display: none;
+}

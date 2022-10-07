@@ -19,33 +19,33 @@ function Sidenav() {
                         <ul className='menu-list'>
                             <li>
                                 <a href='#'>
-                                    <div className='menu-icon'>
+                                    <div className='menu-icon imported-i'>
                                         <i class="bi bi-house"></i>
                                     </div>
-                                    <span>Home</span>
+                                    <span className='menu-name'>Home</span>
                                 </a>
                             </li>
                             <li>
                                 <a href='#'>
-                                    <div className='menu-icon'>
+                                    <div className='menu-icon imported-i'>
                                         <i class="bi bi-info-square"></i>
                                     </div>
-                                    <span>About</span>
+                                    <span className='menu-name'>About</span>
                                 </a>
                             </li>
                             <li>
                                 <a href='#'><div className='menu-icon'>
-                                    <img height={15} src={EventsLogo} />
+                                    <img height={14.5} src={EventsLogo} />
                                 </div>
-                                    <span>Events</span>
+                                    <span className='menu-name'>Events</span>
                                 </a>
                             </li>
                             <li>
                                 <a href='#'>
-                                    <div className='menu-icon'>
+                                    <div className='menu-icon imported-i'>
                                         <i class="bi bi-info-square"></i>
                                     </div>
-                                    <span>Sponsors</span>
+                                    <span className='menu-name'>Sponsors</span>
                                 </a>
                             </li>
                         </ul>
