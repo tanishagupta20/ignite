@@ -3,6 +3,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Sidenav from './Sidenav.js'
 import Countdown from './pages/Home/Countdown';
+import Topnav from './pages/Home/Topnav';
 import Register from './pages/Register/Register';
 import Core from './pages/Core/Core';
 
@@ -25,6 +26,7 @@ function App() {
 function Home(){
   return(
     <div style = {{width : "100%", backgroundColor : "transparent", height : "100vh"} }>
+      <Topnav />
       <Countdown />
     </div>
   )
