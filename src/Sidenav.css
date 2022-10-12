@@ -10,27 +10,28 @@
   position: absolute;
   top: 0;
   right: 0;
+  height: 150vh;
 }
 
 .nav-container.active {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 150vh;
   width: 250px;
   background-color: aliceblue;
   transition: all 0.3s ease-in-out;
-  border-radius: 15px;
+  border-radius: 15px 0px 0px 15px;
   overflow: hidden;
 }
 
 .nav-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 150vh;
   width: 50px;
   background-color: aliceblue;
   transition: all 0.3s ease-in-out;
-  border-radius: 15px;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .nav-container .burger-icon-container {
@@ -50,15 +51,12 @@
   display: flex;
   height: calc(100% - 35px);
   transition: all 0.3s ease-in-out;
+  justify-content: center;
 }
 
 .nav-container .main-menu-container .menu-items {
   display: flex;
   transition: all 0.3s ease-in-out;
-}
-
-.nav-container .main-menu-container .menu-items:hover {
-  color: white;
 }
 
 .nav-container .main-menu-container .menu-items .menu-list {
@@ -68,23 +66,20 @@
 .nav-container .main-menu-container .menu-items .menu-list li {
   border-bottom: 0.2px solid gray;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+
+.nav-container .main-menu-container .menu-items .menu-list li:hover{
+    background-color: blueviolet;
 }
 
 .home-icon {
   border-top: 0.2px solid gray;
 }
 
-.nav-container .main-menu-container .menu-items .menu-list li:hover {
-  border-bottom: 0.2px solid gray;
-  background-color: rgb(147, 144, 144);
-  border-radius: 7px;
-}
-
-.nav-container .main-menu-container .menu-items .menu-list li:hover a {
-  color: white;
-}
-
-.nav-container .main-menu-container .menu-items .menu-list li a {
+.nav-container .main-menu-container .menu-items .menu-list .nav-items-link {
   text-decoration: none;
   color: black;
   display: flex;
@@ -93,19 +88,14 @@
   align-items: center;
 }
 
-li {
-  padding: 15px;
-  transition: all 0.3s ease-in-out;
-}
-
 .nav-container .main-menu-container .menu-items .menu-list .imported-i {
   font-size: 20px;
 }
 
-.nav-container .main-menu-container .menu-items .menu-list li a .hidden {
+.nav-container .main-menu-container .menu-items .menu-list .nav-items-link .hidden {
   display: none;
 }
 
-.nav-container .main-menu-container .menu-items .menu-list li a .menu-name {
+.nav-container .main-menu-container .menu-items .menu-list .nav-items-link .menu-name {
   padding-left: 20px;
 }
