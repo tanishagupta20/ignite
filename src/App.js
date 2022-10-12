@@ -6,6 +6,7 @@ import Countdown from './pages/Home/Countdown';
 import Topnav from './pages/Home/Topnav';
 import Register from './pages/Register/Register';
 import Core from './pages/Core/Core';
+import HomepageLogo from './pages/Home/HomepageLogo';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function Home(){
   return(
     <div style = {{width : "100%", backgroundColor : "transparent", height : "100vh"} }>
       <Topnav />
+      <HomepageLogo />
       <Countdown />
     </div>
   )
