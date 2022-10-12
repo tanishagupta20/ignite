@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.about-container{
+    background-color: chartreuse;
+    height : 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title{
+    display: flex;
+    padding-top: 10px;
+}
+
+.about-content{
+    padding-right: 80px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

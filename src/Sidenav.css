@@ -7,7 +7,7 @@
     background-color: #252525;
 } */
 .sidenav-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100vh;

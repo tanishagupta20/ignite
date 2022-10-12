@@ -7,6 +7,7 @@ import Topnav from './pages/Home/Topnav';
 import Register from './pages/Register/Register';
 import Core from './pages/Core/Core';
 import HomepageLogo from './pages/Home/HomepageLogo';
+import IgniteAbout from './pages/Home/IgniteAbout';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function Home(){
     <div style = {{width : "100%", backgroundColor : "transparent", height : "100vh"} }>
       <Topnav />
       <HomepageLogo />
+      <IgniteAbout />
       <Countdown />
     </div>
   )
