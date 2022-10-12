@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background : #252525 ;
+}
+
+.core-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap : 3rem;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.code-main-heading{
+    min-height: 5rem;
+    margin: 2rem;
+    color: aliceblue;
+    text-shadow:
+    /* White glow */
+    0 0 2px #fff,
+    0 0 3.5px #fff,
+    0 0 14px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+.faded-hz-line{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.85), rgba(0, 0, 0, 0));
+}
+
+.core-card-body{
+    overflow: hidden;
+    box-shadow: whitesmoke 0px 2px 8px 0px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    background-color: aliceblue;
+    margin-bottom: 1rem;
+}
+
+.core-card-img{
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.core-card-name{
+    padding: 1rem;
+    text-align: center;
+}
+
+.core-card-desig{
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.core-card-body:hover{
+    transform: scale(1.02);
+}
+
+

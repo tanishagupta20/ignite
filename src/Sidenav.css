@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-body{
+/* body{
     background-color: #252525;
-}
+} */
 
 .nav-container.active{
     display: flex;
