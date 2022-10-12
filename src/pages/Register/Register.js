@@ -106,20 +106,31 @@ function Register() {
                     <select name='branch' onChange={handleChange} >
                         <option name='' value=''>-- Select your branch --</option>
                         <option name='cse' value='CSE'>CSE</option>
-
+                        <option name='bca' value='BCA'>BCA</option>
+                        <option name='bpharm' value='B.Pharm'>B.Pharm</option>
+                        <option name='nursing' value='nursing'>Nursing</option>
                     </select>
                 </div>
 
                 <div>
                     <label htmlFor='year'>Year</label>
-                    {/*dropdown
-                     <input type='text' name='fullName' placeholder='Enter your full name' /> */}
+                    <select name='year' onChange={handleChange} >
+                        <option name='' value=''>-- Select your year --</option>
+                        <option name='first' value='First year'>First year</option>
+                        <option name='second' value='Second year'>Second year</option>
+                        <option name='third' value='Third year'>Third year</option>
+                        <option name='fourth' value='Fourth year'>Fourth year</option>
+                    </select>
                 </div>
 
                 <div>
                     <label htmlFor='gender'>Gender</label>
-                    {/* Male, Female, Prefer not to say */}
-                    {/* <input type='text' name='fullName' placeholder='Enter your full name' /> */}
+                    <select name='gender' onChange={handleChange} >
+                        <option name='' value=''>-- Select your gender --</option>
+                        <option name='male' value='Male'>Male</option>
+                        <option name='female' value='Female'>Second year</option>
+                        <option name='preferNotToSay' value='Prefer not to say'>Prefer not to say</option>
+                    </select>
                 </div>
 
                 <div>
