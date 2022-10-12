@@ -1,6 +1,6 @@
 import React from "react";
 import './CoreCards.css'
-import Marky from './assets/core/marky.jpg'
+// import Marky from './assets/core/marky.jpg'
 
 export default function CoreCards(props){
     return(

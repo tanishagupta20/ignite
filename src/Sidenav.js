@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Sidenav.css'
 import EventsLogo from './assets/image/flags-svgrepo-com.svg'
+import { Link } from 'react-router-dom'
 
 function Sidenav() {
     const [inactive, setInative] = useState(true)
@@ -8,7 +9,7 @@ function Sidenav() {
     const toggleSideNav = () => setInative(!inactive)
 
     return (
-        <>
+        <div className='sidenav-container'>
             <div className={inactive ? 'nav-container' : 'nav-container active'}>
                 <div className='burger-icon-container'>
                     <span className='burger' onClick={toggleSideNav}><i class="bi bi-list"></i></span>
@@ -49,12 +50,20 @@ function Sidenav() {
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Sponsors</span>
                                 </a>
                             </li>
+                            <li style={!inactive ? {width : "210px"} : {width : "20px"}}>
+                                <Link to="/core" title={inactive ? 'Core' : ''}>
+                                    <div className='menu-icon imported-i'>
+                                        <i class="bi bi-info-square"></i>
+                                    </div>
+                                    <span className={!inactive ? 'menu-name' : 'hidden'}>Core</span>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
