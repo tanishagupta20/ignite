@@ -1,0 +1,24 @@
+/* .timer-container{
+    width: 100vw;
+} */
+
+.timer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0 4em 0;
+    width: 100%;
+    background-color: blue;
+}
+
+.timer>div {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    margin: 2em 2.5em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em silver;
+}
+
+.timer>div>p{
+    text-align: center;
+}
