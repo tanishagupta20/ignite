@@ -31,7 +31,7 @@ function Sidenav() {
                 <div className='main-menu-container' onClick={toggleSideNav}>
                     <div className='menu-items'>
                         <ul className='menu-list'>
-                            <Link className="nav-items-link" to='/home' title={inactive ? 'Home' : ''}>
+                            <Link className="nav-items-link" to='/' title={inactive ? 'Home' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }} className="home-icon">
                                     <div className='menu-icon imported-i'>
                                         <i class="bi bi-house"></i>

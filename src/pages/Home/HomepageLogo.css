@@ -1,27 +1,35 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+}
+
+#infinity-bg {
+    position: absolute;
+    z-index: -10;
+
 }
 
 .main-logo-container{
     display: flex;
-    background-color: orangered;
-    height: 92vh;
+    background-color: transparent;
+    width: calc(100% - 20px);
+    height: calc(100% - 3.5rem);
     justify-content: center;
     align-items: center;
 }
 
 .logo-name-container{
     display: flex;
-    background-color: beige;
     height: 40vh;
     width: 50vw;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .ignite-name{
     font-size: 5rem;
     margin-left: -35px;
+    color: #fff;
 }
