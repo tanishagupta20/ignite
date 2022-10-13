@@ -1,0 +1,99 @@
+:root {
+    --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+
+}
+
+.formPageContainer {
+    padding: 5% 0;
+    background: #ddd;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 25s infinite;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left
+    }
+
+    50% {
+        background-position: right
+    }
+
+    100% {
+        background-position: left
+    }
+}
+
+.formContainer {
+    margin: auto;
+    padding: 2em 4em;
+    border-radius: 10px;
+    max-width: 70%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.registerNow {
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color: #ee6352;
+    line-height: .8;
+    margin: 0;
+
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    transition: background-position 1s;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.registerNow:hover {
+    background-position: right;
+}
+
+.formContainer>form>div {
+    margin: 1em 0;
+}
+
+.formContainer>form>div>label>span {
+    color: red;
+}
+
+.formContainer>form>div>input[type='text'],
+.formContainer>form>div>select {
+    font-size: 1rem;
+}
+
+.formContainer>form>div {
+    font-size: 1.12rem;
+}
+
+.formContainer>form>div>p{
+    font-size: 0.9rem;
+    font-style: italic;
+    color: red;
+    
+}
+
+.registerButton {
+    color: white;
+    border: 0;
+    cursor: pointer;
+    padding: .5em 1.25em;
+    font-size: 1.12rem;
+    background: linear-gradient(90deg, #ee6352, purple, #ee6352);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 700ms;
+}
+
+.registerButton:hover {
+    background-position: right;
+}
