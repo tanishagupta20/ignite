@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import './HomepageLogo.css'
 import Ignite from '../../assets/logos/upscaled_ignite.png'
 import * as THREE from 'three'
@@ -8,6 +8,7 @@ import StarImg from './star.png'
 export default function HomepageLogo() {
 
     const [loading, setLoading] = useState(true)
+    const bgRef = useRef()
     let scene, camera, renderer, stars, starGeo
 
     function init() {
@@ -20,7 +21,7 @@ export default function HomepageLogo() {
 
         renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
-        document.getElementById("infinity-bg").appendChild(renderer.domElement);
+        bgRef.current.appendChild(renderer.domElement);
 
         starGeo = new THREE.Geometry();
         for (let i = 0; i < 6000; i++) {
@@ -89,7 +90,7 @@ export default function HomepageLogo() {
 
     return (
         <div className="main-logo-container">
-            <div id="infinity-bg"></div>
+            <div id="infinity-bg" ref={bgRef}></div>
             <div className="logo-name-container">
                 <div className="img-ignite">
                     <img src={Ignite} height="150rem" width="150rem" />
