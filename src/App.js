@@ -30,8 +30,8 @@ function Home(){
     <div style = {{width : "100%", backgroundColor : "transparent", height : "100vh"} }>
       <Topnav />
       <HomepageLogo />
-      <IgniteAbout />
       <Countdown />
+      <IgniteAbout />
     </div>
   )
 }
