@@ -7,7 +7,6 @@
 #infinity-bg {
     position: absolute;
     z-index: -10;
-
 }
 
 .main-logo-container{
@@ -26,17 +25,32 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
-    margin-top: -5em;
+    margin-top: -6em;
 }
+
+.img-ignite{
+    margin-right: -35px;
+}
+
+/* .ignite-text-cont{
+    background-color: #ff0400;
+} */
 
 .ignite-name{
     font-size: 7rem;
-    margin-left: -35px;
+    /* margin-left: -35px; */
     color: #fff;
     font-family: 'Silkscreen', cursive;
     /* color : violet */
     background-image: linear-gradient(to right, #b896ff, #4745ef);
     background-clip: text;
     color : transparent;
-    
+    -webkit-text-stroke: 0.6px white;
+}
+
+.ignite-desc{
+    color: #fff;
+    text-align: center;
+    font-size: 1.35rem;
+    letter-spacing: 0.8em;
 }

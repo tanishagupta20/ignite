@@ -50,7 +50,7 @@ export default function HomepageLogo() {
 
         animate();
     }
-    
+
     //rendering loop
     function onWindowResize() {
         camera.aspect = window.innerWidth / window.innerHeight;
@@ -95,7 +95,10 @@ export default function HomepageLogo() {
                 <div className="img-ignite">
                     <img src={Ignite} height="180rem" width="180rem" />
                 </div>
-                <p className="ignite-name">IGNITE</p>
+                <div className="ignite-text-cont">
+                    <p className="ignite-name">IGNITE</p>
+                    <p className="ignite-desc">TECHFEST 2K22</p>
+                </div>
             </div>
         </div>
     )
