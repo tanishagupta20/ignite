@@ -14,7 +14,7 @@
     display: flex;
     background-color: transparent;
     width: calc(100% - 20px);
-    height: calc(100% - 3.5rem);
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -32,4 +32,13 @@
     font-size: 5rem;
     margin-left: -35px;
     color: #fff;
+    font-family: 'Silkscreen', cursive;
+    /* color : violet */
+    background-image: linear-gradient(to right, violet, blue);
+    background-clip: text;
+    color : transparent;
+    /* text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff, */
 }

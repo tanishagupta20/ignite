@@ -15,7 +15,7 @@ export default function HomepageLogo() {
         //create scene object
         scene = new THREE.Scene();
 
-        camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
+        camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 2000);
         camera.position.z = -1;
         camera.rotation.x = Math.PI / 2;
 
@@ -31,7 +31,7 @@ export default function HomepageLogo() {
                 Math.random() * 600 - 300
             );
             star.velocity = 0;
-            star.acceleration = 0.02;
+            star.acceleration = 0.001;
             starGeo.vertices.push(star);
         }
 
@@ -39,7 +39,7 @@ export default function HomepageLogo() {
         console.log(sprite);
         let starMaterial = new THREE.PointsMaterial({
             color: 0xaaaaaa,
-            size: 0.7,
+            size: 0.65,
             map: sprite
         });
 
