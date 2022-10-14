@@ -15,7 +15,7 @@ export default function HomepageLogo() {
         //create scene object
         scene = new THREE.Scene();
 
-        camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
+        camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 2000);
         camera.position.z = -1;
         camera.rotation.x = Math.PI / 2;
 
@@ -31,7 +31,7 @@ export default function HomepageLogo() {
                 Math.random() * 600 - 300
             );
             star.velocity = 0;
-            star.acceleration = 0.02;
+            star.acceleration = 0.01;
             starGeo.vertices.push(star);
         }
 
@@ -39,7 +39,7 @@ export default function HomepageLogo() {
         console.log(sprite);
         let starMaterial = new THREE.PointsMaterial({
             color: 0xaaaaaa,
-            size: 0.7,
+            size: 0.65,
             map: sprite
         });
 
@@ -50,7 +50,7 @@ export default function HomepageLogo() {
 
         animate();
     }
-    
+
     //rendering loop
     function onWindowResize() {
         camera.aspect = window.innerWidth / window.innerHeight;
@@ -93,9 +93,12 @@ export default function HomepageLogo() {
             <div id="infinity-bg" ref={bgRef}></div>
             <div className="logo-name-container">
                 <div className="img-ignite">
-                    <img src={Ignite} height="150rem" width="150rem" />
+                    <img src={Ignite} height="180rem" width="180rem" />
                 </div>
-                <p className="ignite-name">IGNITE</p>
+                <div className="ignite-text-cont">
+                    <p className="ignite-name">IGNITE</p>
+                    <p className="ignite-desc">TECHFEST 2K22</p>
+                </div>
             </div>
         </div>
     )

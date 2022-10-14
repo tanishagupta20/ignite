@@ -5,7 +5,7 @@
 }
 
 .about-container{
-    background-color: chartreuse;
+    background-color: black;
     height : 30vh;
     display: flex;
     flex-direction: column;
@@ -16,6 +16,7 @@
 .about-title{
     display: flex;
     padding-top: 10px;
+    color: white;
 }
 
 .about-content{
@@ -23,4 +24,5 @@
     padding-left: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
+    color: white;
 }
