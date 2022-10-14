@@ -3,11 +3,11 @@ import './CoreCards.css'
 import CoreCards from "./CoreCards";
 import Marky from '../../assets/core/marky.jpg'
 
-export default function Core(){
-    return(
-        <>
-        <div className='code-main-heading'>
-        <h1>OUR TEAM</h1>
+export default function Core() {
+  return (
+    <div className="core-container">
+      <div className='code-main-heading'>
+        <h1>CORE MEMBERS</h1>
       </div>
       <div className='faded-hz-line'></div>
       <div className='core-div'>
@@ -18,6 +18,6 @@ export default function Core(){
         <CoreCards img={Marky} name="Rashmika Datta" desig="idk" />
         <CoreCards img={Marky} name="abcdef ghi" desig="blahblah blah" />
       </div>
-        </>
-    )
+    </div>
+  )
 }
