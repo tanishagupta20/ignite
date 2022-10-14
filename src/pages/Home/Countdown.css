@@ -8,11 +8,11 @@
     background-color : #6b4ab9;
     text-align: center;
     font-size: 2rem;
-    margin-top: -5px;
+    /* margin-top: -5px; */
 }
 
-.waves-img-countdown{
-    margin-top: -200px;
+.layer-img-countdown{
+    margin-top: -710px;
 }
 
 .timer {
