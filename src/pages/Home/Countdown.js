@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import waves from "../../assets/waves/stacked-waves-3.svg";
+import waves from "../../assets/waves/stacked-waves-4.svg";
 import './Countdown.css'
 
 function Countdown() {
