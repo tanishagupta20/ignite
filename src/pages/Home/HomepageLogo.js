@@ -31,7 +31,7 @@ export default function HomepageLogo() {
                 Math.random() * 600 - 300
             );
             star.velocity = 0;
-            star.acceleration = 0.001;
+            star.acceleration = 0.01;
             starGeo.vertices.push(star);
         }
 
@@ -93,7 +93,7 @@ export default function HomepageLogo() {
             <div id="infinity-bg" ref={bgRef}></div>
             <div className="logo-name-container">
                 <div className="img-ignite">
-                    <img src={Ignite} height="150rem" width="150rem" />
+                    <img src={Ignite} height="180rem" width="180rem" />
                 </div>
                 <p className="ignite-name">IGNITE</p>
             </div>

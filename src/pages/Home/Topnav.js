@@ -10,9 +10,9 @@ export default function Topnav() {
                 <img src={CU} className="chitkara-logo" height="48rem" />
             </div>
             <div className="register-hp">
-                    <Link className="register-link" to="#">
-                        Register
-                    </Link>
+                <Link className="register-link" to="#">
+                    <button className='registerButton'>Register</button>
+                </Link>
             </div>
         </div>
     )
