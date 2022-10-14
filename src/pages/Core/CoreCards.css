@@ -10,6 +10,7 @@ body{
 
 .core-container{
     /* height: 100%; */
+    width : calc(100% - 50px);
     background: linear-gradient(109.6deg, #4c6cc4 13.4%, #6e3b68 100.2%);
     margin-top: 0;
 }
