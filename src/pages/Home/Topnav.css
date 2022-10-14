@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav-container{
+    background-color: black;
+    height : 3.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chitkara-logo-div{
+    display: flex;
+    justify-content: center;
+}
+
+.chitkara-logo{
+    padding-left: 15px;
+    padding-top: 6px;
+}
+
+.register-hp{
+    display: flex;
+    justify-content: center;
+}
+
+.register-link{
+    text-decoration: none;
+    padding-right : 66px;
+    padding-top: 12px;
+    font-size: 1.3rem;
+    color : #fff
+}
