@@ -8,10 +8,13 @@
     align-items: center;
     justify-content: center;
     padding: 3em 0 4em 0;
+    background-repeat: no-repeat;
+    background-size: cover;
     /* width: 100%; */
-    background-color: black;
+    /* background-color: black; */
     /* border-top: 2px solid white; */
     /* box-shadow: ; */
+    /* background-image: url("../assets/waves/stacked-waves.svg"); */
 }
 
 .timer>div {

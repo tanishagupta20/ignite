@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import waves from "../../assets/waves/stacked-waves.svg";
 import './Countdown.css'
 
 function Countdown() {
@@ -45,7 +46,7 @@ function Countdown() {
     });
 
     return (
-        <div className="timer">
+        <div className="timer" style={{backgroundImage: `url(${waves})`}}>
             <div>
                 <p>{timerDays}</p>
                 <p>Days</p>
