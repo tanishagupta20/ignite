@@ -7,7 +7,7 @@ export default function Core(){
     return(
         <>
         <div className='code-main-heading'>
-        <h1>CORE MEMBERS</h1>
+        <h1>OUR TEAM</h1>
       </div>
       <div className='faded-hz-line'></div>
       <div className='core-div'>
