@@ -27,7 +27,7 @@ function App() {
 
 function Home(){
   return(
-    <div style = {{width : "100%", backgroundColor : "transparent", height : "100vh"} }>
+    <div style = {{width : "calc(100% - 50px)", backgroundColor : "transparent", height : "100vh"} }>
       <Topnav />
       <HomepageLogo />
       <Countdown />

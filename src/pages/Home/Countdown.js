@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import waves from "../../assets/waves/stacked-waves-4.svg";
+import waves from "../../assets/waves/stacked-peaks-1.svg";
 import './Countdown.css'
 
 function Countdown() {
@@ -47,7 +47,7 @@ function Countdown() {
 
     return (
         <>
-        <img src = {waves}  width = "100%"/>
+        <img className="waves-img-countdown" src = {waves}  width = "100%"/>
         <div className= "countdown-container">
         <p className="fest-countdown">The fest starts in : </p>
             <div className="timer">

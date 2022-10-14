@@ -11,6 +11,10 @@
     margin-top: -5px;
 }
 
+.waves-img-countdown{
+    margin-top: -200px;
+}
+
 .timer {
     display: flex;
     flex-wrap: wrap;
