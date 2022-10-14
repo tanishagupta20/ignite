@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import waves from "../../assets/waves/stacked-waves.svg";
+import waves from "../../assets/waves/stacked-waves-3.svg";
 import './Countdown.css'
 
 function Countdown() {
@@ -46,24 +46,31 @@ function Countdown() {
     });
 
     return (
-        <div className="timer" style={{backgroundImage: `url(${waves})`}}>
-            <div>
-                <p>{timerDays}</p>
-                <p>Days</p>
+        <>
+        <img src = {waves}  width = "100%"/>
+        <div className= "countdown-container">
+        <p className="fest-countdown">The fest starts in : </p>
+            <div className="timer">
+                {/* style={{backgroundImage: `url(${waves})`}} */}
+                <div>
+                    <p>{timerDays}</p>
+                    <p>Days</p>
+                </div>
+                <div>
+                    <p>{timerHours}</p>
+                    <p>Hours</p>
+                </div>
+                <div>
+                    <p>{timerMinutes}</p>
+                    <p>Minutes</p>
+                </div>
+                <div>
+                    <p>{timerSeconds}</p>
+                    <p>Seconds</p>
+                </div>
             </div>
-            <div>
-                <p>{timerHours}</p>
-                <p>Hours</p>
             </div>
-            <div>
-                <p>{timerMinutes}</p>
-                <p>Minutes</p>
-            </div>
-            <div>
-                <p>{timerSeconds}</p>
-                <p>Seconds</p>
-            </div>
-        </div>
+        </>
     );
 }
 
