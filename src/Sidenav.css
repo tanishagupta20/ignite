@@ -19,7 +19,8 @@
   height: 100vh;
   width: 250px;
   /* background-color: aliceblue; */
-  background-image: linear-gradient(to right top, #35393d, #2e3135, #272a2d, #202325, #191c1e, #1a1d20, #1a1f22, #1b2024, #232930, #2b333c, #343d49, #3e4756);
+  /* background-image: linear-gradient(to right top, #35393d, #2e3135, #272a2d, #202325, #191c1e, #1a1d20, #1a1f22, #1b2024, #232930, #2b333c, #343d49, #3e4756); */
+  background-image: linear-gradient(to right, #0e1474, #0c136b, #0b1163, #0a105a, #090e52, #060e4b, #040d45, #040c3e, #040b37, #050931, #04072a, #030523);
   transition: all 0.3s ease-in-out;
   border-radius: 15px 0px 0px 15px;
   overflow: hidden;
@@ -31,7 +32,8 @@
   height: 100vh;
   width: 50px;
   /* background-color: aliceblue; */
-  background-image: linear-gradient(to right top, #35393d, #2e3135, #272a2d, #202325, #191c1e, #1a1d20, #1a1f22, #1b2024, #232930, #2b333c, #343d49, #3e4756);
+  /* background-image: linear-gradient(to right top, #35393d, #2e3135, #272a2d, #202325, #191c1e, #1a1d20, #1a1f22, #1b2024, #232930, #2b333c, #343d49, #3e4756); */
+  background-image: linear-gradient(to right, #0e1474, #0c136b, #0b1163, #0a105a, #090e52, #060e4b, #040d45, #040c3e, #040b37, #050931, #04072a, #030523);
   transition: all 0.3s ease-in-out;
   border-radius: 15px 0px 0px 15px;
 }

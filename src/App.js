@@ -8,6 +8,7 @@ import Register from './pages/Register/Register';
 import Core from './pages/Core/Core';
 import HomepageLogo from './pages/Home/HomepageLogo';
 import IgniteAbout from './pages/Home/IgniteAbout';
+import FlipPages from "./pages/Home/EventFlipBook/FlipPages";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function Home(){
       <HomepageLogo />
       <Countdown />
       <IgniteAbout />
+      <FlipPages />
     </div>
   )
 }
