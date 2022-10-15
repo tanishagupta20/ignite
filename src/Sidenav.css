@@ -19,8 +19,7 @@
   height: 100vh;
   width: 250px;
   /* background-color: aliceblue; */
-  /* background-image: linear-gradient(to right top, #35393d, #2e3135, #272a2d, #202325, #191c1e, #1a1d20, #1a1f22, #1b2024, #232930, #2b333c, #343d49, #3e4756); */
-  background-image: linear-gradient(to right, #0e1474, #0c136b, #0b1163, #0a105a, #090e52, #060e4b, #040d45, #040c3e, #040b37, #050931, #04072a, #030523);
+  background-image: linear-gradient(to bottom, #04283a, #072c47, #072a51, #172953, #25274d, #2f2c53, #2d2552, #2a2040, #292047, #1e1a43, #11103f, #060a2f);
   transition: all 0.3s ease-in-out;
   border-radius: 15px 0px 0px 15px;
   overflow: hidden;
@@ -32,8 +31,7 @@
   height: 100vh;
   width: 50px;
   /* background-color: aliceblue; */
-  /* background-image: linear-gradient(to right top, #35393d, #2e3135, #272a2d, #202325, #191c1e, #1a1d20, #1a1f22, #1b2024, #232930, #2b333c, #343d49, #3e4756); */
-  background-image: linear-gradient(to right, #0e1474, #0c136b, #0b1163, #0a105a, #090e52, #060e4b, #040d45, #040c3e, #040b37, #050931, #04072a, #030523);
+  background-image: linear-gradient(to bottom, #04283a, #072c47, #072a51, #172953, #25274d, #2f2c53, #2d2552, #2a2040, #292047, #1e1a43, #11103f, #060a2f);
   transition: all 0.3s ease-in-out;
   border-radius: 15px 0px 0px 15px;
 }
@@ -61,6 +59,9 @@
 
 .nav-container .main-menu-container .menu-items {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
   transition: all 0.3s ease-in-out;
 }
 
@@ -69,19 +70,17 @@
 }
 
 .nav-container .main-menu-container .menu-items .menu-list li {
-  border-bottom: 0.2px solid white;
+  /* border-bottom: 0.2px solid white; */
   transition: all 0.3s ease-in-out;
   display: flex;
   padding: 15px;
   justify-content: center;
 }
 
-/* .nav-container .main-menu-container .menu-items .menu-list li:hover{
-    background-color: blueviolet;
-} */
-
-.home-icon {
-  border-top: 0.2px solid white;
+.faded-hz-line{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.85), rgba(0, 0, 0, 0));
 }
 
 .nav-container .main-menu-container .menu-items .menu-list .nav-items-link {
@@ -91,10 +90,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.nav-container .main-menu-container .menu-items .menu-list .imported-i {
-  font-size: 20px;
 }
 
 .nav-container .main-menu-container .menu-items .menu-list .nav-items-link .hidden {
