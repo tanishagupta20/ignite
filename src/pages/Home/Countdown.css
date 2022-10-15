@@ -5,7 +5,7 @@
 .fest-countdown{
     color: white;
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em white;
-    background-color : #6b4ab9;
+    background-color : rgb(30, 29, 88);
     text-align: center;
     font-size: 2rem;
     /* margin-top: -5px; */
@@ -17,13 +17,17 @@
     z-index: -1;
 }
 
+.countdown-container{
+    margin-top: 10em;
+}
+
 .timer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 2em 0 4em 0;
-    background-color : #6b4ab9;
+    background: linear-gradient(to bottom, rgb(30, 29, 88), rgb(1, 1, 41));
     /* margin-top : -5px; */
 }
 
