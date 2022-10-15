@@ -23,7 +23,7 @@
     height: 40vh;
     width: 50vw;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     z-index: 2;
     margin-top: -6em;
 }
