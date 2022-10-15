@@ -1,32 +1,29 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
 .about-container{
     background-color: black;
-    height : 30vh;
+    /* height : 30vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background: linear-gradient(to bottom, rgb(30, 29, 88), transparent); */
-    background-color: rgb(1, 1, 41);
+    background-color: #030331;
+    padding: 0 10em;
 }
 
 .about-title{
     display: flex;
     padding-top: 10px;
     color: white;
+    letter-spacing: 17px;
 }
 
 .about-content{
-    padding-right: 80px;
-    padding-left: 50px;
+    /* padding-right: 80px;
+    padding-left: 50px; */
     padding-top: 30px;
     padding-bottom: 30px;
     color: white;
     font-size: 1.3rem;
     text-align: justify;
+    letter-spacing: 2px;
 }

@@ -3,9 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: sans-serif;
-    background-color: powderblue;
+    /* background-color: powderblue; */
+    background: linear-gradient(to bottom, #030331, rgb(139, 17, 17));
 }
 
 /* Book */
@@ -23,7 +23,6 @@
     top: 0;
     left: 0;
     perspective: 1500px;
-
 }
 
 .front,

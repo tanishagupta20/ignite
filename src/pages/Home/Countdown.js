@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import waves from "../../assets/waves/layered-peaks-5.svg";
+// import "../../fonts/digital-7.ttf";
 import './Countdown.css'
 
 function Countdown() {
@@ -52,19 +53,22 @@ function Countdown() {
             <div className="timer">
                 {/* style={{backgroundImage: `url(${waves})`}} */}
                 <div>
-                    <p>{timerDays}</p>
+                    <p className="calc-font">{timerDays}</p>
                     <p>Days</p>
                 </div>
+                <p className="time-colon">:</p>
                 <div>
-                    <p>{timerHours}</p>
+                    <p className="calc-font">{timerHours}</p>
                     <p>Hours</p>
                 </div>
+                <p className="time-colon">:</p>
                 <div>
-                    <p>{timerMinutes}</p>
+                    <p className="calc-font">{timerMinutes}</p>
                     <p>Minutes</p>
                 </div>
+                <p className="time-colon">:</p>
                 <div>
-                    <p>{timerSeconds}</p>
+                    <p className="calc-font">{timerSeconds}</p>
                     <p>Seconds</p>
                 </div>
             </div>

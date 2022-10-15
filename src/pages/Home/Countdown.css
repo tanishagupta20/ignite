@@ -2,6 +2,13 @@
     width: 100vw;
 } */
 
+@font-face {
+    font-family: "Digital7";
+    src: local("Digital7"),
+     url("../../fonts/digital-7.ttf") format("truetype");
+    font-weight: bold;
+}
+
 .countdown-container{
     background-color: rgb(30, 29, 88);
 }
@@ -26,18 +33,28 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 2em 0 4em 0;
-    background: linear-gradient(to bottom, rgb(30, 29, 88), rgb(1, 1, 41));
+    padding: 2em 0 8em 0;
+    background: linear-gradient(to bottom, #1e1d58, #030331);
     /* margin-top : -5px; */
 }
 
-.timer>div {
+.timer>div, .time-colon {
     font-size: 1.5rem;
     color: whitesmoke;
-    margin: 2em 2.5em;
+    margin: 1.5em 1.5em;
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em silver;
 }
 
 .timer>div>p{
     text-align: center;
+}
+
+.calc-font{
+    font-family: Digital7;
+    font-size: 3rem;
+}
+
+.time-colon{
+    font-size: 2rem;
+    font-weight: bolder;
 }
