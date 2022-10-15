@@ -18,7 +18,8 @@
   flex-direction: column;
   height: 100vh;
   width: 250px;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  background-image: linear-gradient(to right top, #35393d, #2e3135, #272a2d, #202325, #191c1e, #1a1d20, #1a1f22, #1b2024, #232930, #2b333c, #343d49, #3e4756);
   transition: all 0.3s ease-in-out;
   border-radius: 15px 0px 0px 15px;
   overflow: hidden;
@@ -29,7 +30,8 @@
   flex-direction: column;
   height: 100vh;
   width: 50px;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  background-image: linear-gradient(to right top, #35393d, #2e3135, #272a2d, #202325, #191c1e, #1a1d20, #1a1f22, #1b2024, #232930, #2b333c, #343d49, #3e4756);
   transition: all 0.3s ease-in-out;
   border-radius: 15px 0px 0px 15px;
 }
@@ -38,6 +40,7 @@
   display: flex;
   flex-direction: row-reverse;
   height: 35px;
+  color : white;
 }
 
 .nav-container .burger-icon-container .burger {
@@ -64,24 +67,24 @@
 }
 
 .nav-container .main-menu-container .menu-items .menu-list li {
-  border-bottom: 0.2px solid gray;
+  border-bottom: 0.2px solid white;
   transition: all 0.3s ease-in-out;
   display: flex;
   padding: 15px;
   justify-content: center;
 }
 
-.nav-container .main-menu-container .menu-items .menu-list li:hover{
+/* .nav-container .main-menu-container .menu-items .menu-list li:hover{
     background-color: blueviolet;
-}
+} */
 
 .home-icon {
-  border-top: 0.2px solid gray;
+  border-top: 0.2px solid white;
 }
 
 .nav-container .main-menu-container .menu-items .menu-list .nav-items-link {
   text-decoration: none;
-  color: black;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;

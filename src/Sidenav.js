@@ -1,24 +1,11 @@
 import React, { useState } from 'react'
 import './Sidenav.css'
-import EventsLogo from './assets/image/flags-svgrepo-com.svg'
 import { Link } from 'react-router-dom'
 
 function Sidenav() {
     const [inactive, setInative] = useState(true)
-    // const [navTop, setNavTop] = useState()
 
      const toggleSideNav = () => setInative(!inactive)
-
-    // useEffect(() => {
-    //     window.addEventListener("scroll", () => {
-
-    //     })
-
-    //     return () => {
-
-    //     }
-    // }, [])
-
 
     return (
         <div className='sidenav-container'>
@@ -50,7 +37,7 @@ function Sidenav() {
                             <Link className="nav-items-link" to='/home' title={inactive ? 'Home' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
                                     <div className='menu-icon'>
-                                        <img height={14.5} src={EventsLogo} />
+                                        <i class="bi bi-flag"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Events</span>
                                 </li>
@@ -58,7 +45,7 @@ function Sidenav() {
                             <Link className="nav-items-link" to='/home' title={inactive ? 'Home' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
                                     <div className='menu-icon imported-i'>
-                                        <i class="bi bi-info-square"></i>
+                                    <i class="bi bi-currency-rupee"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Sponsors</span>
                                 </li>
@@ -66,14 +53,18 @@ function Sidenav() {
                             <Link className="nav-items-link" to='/core' title={inactive ? 'Core' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
                                     <div className='menu-icon imported-i'>
-                                        <i class="bi bi-info-square"></i>
+                                    <i class="bi bi-people"></i>
                                     </div>
-                                    <span className={!inactive ? 'menu-name' : 'hidden'}>Core</span>
+                                    <span className={!inactive ? 'menu-name' : 'hidden'}>Team</span>
                                 </li>
                             </Link>
                         </ul>
                     </div>
 
+                </div>
+
+                <div className='social-icons-container'>
+                    
                 </div>
             </div>
         </div>
