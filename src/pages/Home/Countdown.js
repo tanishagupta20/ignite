@@ -46,10 +46,9 @@ function Countdown() {
     });
 
     return (
-        <>
-        <img className="layer-img-countdown" src = {waves}  width = "100%"/>
-        <div className= "countdown-container">
-        <p className="fest-countdown">The fest starts in : </p>
+        <div className="countdown-container">
+            <img className="layer-img-countdown" src={waves} width="100%" />
+            <p className="fest-countdown">Lift-off in : </p>
             <div className="timer">
                 {/* style={{backgroundImage: `url(${waves})`}} */}
                 <div>
@@ -69,8 +68,7 @@ function Countdown() {
                     <p>Seconds</p>
                 </div>
             </div>
-            </div>
-        </>
+        </div>
     );
 }
 
