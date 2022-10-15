@@ -12,7 +12,9 @@
 }
 
 .layer-img-countdown{
-    margin-top: -710px;
+    margin-top: -770px;
+    position: absolute;
+    z-index: -1;
 }
 
 .timer {
