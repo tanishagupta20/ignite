@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom'
 function Sidenav() {
     const [inactive, setInative] = useState(true)
 
-     const toggleSideNav = () => setInative(!inactive)
+    const toggleSideNav = () => setInative(!inactive)
+
+    const toggleNav = () => setInative(true)
 
     return (
         <div className='sidenav-container'>
@@ -15,10 +17,12 @@ function Sidenav() {
                     <span className='burger' onClick={toggleSideNav}><i class="bi bi-list"></i></span>
                 </div>
 
-                <div className='main-menu-container' onClick={toggleSideNav}>
+                <div className='faded-hz-line'></div>
+
+                <div className='main-menu-container'>
                     <div className='menu-items'>
                         <ul className='menu-list'>
-                            <Link className="nav-items-link" to='/' title={inactive ? 'Home' : ''}>
+                            <Link className="nav-items-link" onClick={toggleNav} to='/' title={inactive ? 'Home' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }} className="home-icon">
                                     <div className='menu-icon imported-i'>
                                         <i class="bi bi-house"></i>
@@ -26,7 +30,10 @@ function Sidenav() {
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Home</span>
                                 </li>
                             </Link>
-                            <Link className="nav-items-link" to='/home' title={inactive ? 'Home' : ''}>
+
+                            <div className='faded-hz-line'></div>
+
+                            <Link className="nav-items-link" onClick={toggleNav} to='/home' title={inactive ? 'Home' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
                                     <div className='menu-icon imported-i'>
                                         <i class="bi bi-info-square"></i>
@@ -34,7 +41,10 @@ function Sidenav() {
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>About</span>
                                 </li>
                             </Link>
-                            <Link className="nav-items-link" to='/home' title={inactive ? 'Home' : ''}>
+
+                            <div className='faded-hz-line'></div>
+
+                            <Link className="nav-items-link" onClick={toggleNav} to='/home' title={inactive ? 'Home' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
                                     <div className='menu-icon'>
                                         <i class="bi bi-flag"></i>
@@ -42,29 +52,33 @@ function Sidenav() {
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Events</span>
                                 </li>
                             </Link>
-                            <Link className="nav-items-link" to='/home' title={inactive ? 'Home' : ''}>
+
+                            <div className='faded-hz-line'></div>
+
+                            <Link className="nav-items-link" onClick={toggleNav} to='/home' title={inactive ? 'Home' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
-                                    <div className='menu-icon imported-i'>
-                                    <i class="bi bi-currency-rupee"></i>
+                                    <div className='menu-icon'>
+                                        <i class="bi bi-currency-rupee"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Sponsors</span>
                                 </li>
                             </Link>
-                            <Link className="nav-items-link" to='/core' title={inactive ? 'Core' : ''}>
+
+                            <div className='faded-hz-line'></div>
+
+                            <Link className="nav-items-link" onClick={toggleNav} to='/core' title={inactive ? 'Core' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
-                                    <div className='menu-icon imported-i'>
-                                    <i class="bi bi-people"></i>
+                                    <div className='menu-icon'>
+                                        <i class="bi bi-people"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Team</span>
                                 </li>
                             </Link>
+
+                            <div className='faded-hz-line'></div>
+
                         </ul>
                     </div>
-
-                </div>
-
-                <div className='social-icons-container'>
-                    
                 </div>
             </div>
         </div>
