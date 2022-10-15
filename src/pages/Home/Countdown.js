@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import waves from "../../assets/waves/layered-peaks-5.svg";
+// import "../../fonts/digital-7.ttf";
 import './Countdown.css'
 
 function Countdown() {
@@ -46,31 +47,32 @@ function Countdown() {
     });
 
     return (
-        <>
-        <img className="layer-img-countdown" src = {waves}  width = "100%"/>
-        <div className= "countdown-container">
-        <p className="fest-countdown">The fest starts in : </p>
+        <div className="countdown-container">
+            <img className="layer-img-countdown" src={waves} width="100%" />
+            <p className="fest-countdown">Lift-off in : </p>
             <div className="timer">
                 {/* style={{backgroundImage: `url(${waves})`}} */}
                 <div>
-                    <p>{timerDays}</p>
+                    <p className="calc-font">{timerDays}</p>
                     <p>Days</p>
                 </div>
+                <p className="time-colon">:</p>
                 <div>
-                    <p>{timerHours}</p>
+                    <p className="calc-font">{timerHours}</p>
                     <p>Hours</p>
                 </div>
+                <p className="time-colon">:</p>
                 <div>
-                    <p>{timerMinutes}</p>
+                    <p className="calc-font">{timerMinutes}</p>
                     <p>Minutes</p>
                 </div>
+                <p className="time-colon">:</p>
                 <div>
-                    <p>{timerSeconds}</p>
+                    <p className="calc-font">{timerSeconds}</p>
                     <p>Seconds</p>
                 </div>
             </div>
-            </div>
-        </>
+        </div>
     );
 }
 
