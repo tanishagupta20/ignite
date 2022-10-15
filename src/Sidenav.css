@@ -59,6 +59,9 @@
 
 .nav-container .main-menu-container .menu-items {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
   transition: all 0.3s ease-in-out;
 }
 
@@ -73,10 +76,6 @@
   padding: 15px;
   justify-content: center;
 }
-
-/* .nav-container .main-menu-container .menu-items .menu-list li:hover{
-    background-color: blueviolet;
-} */
 
 .faded-hz-line{
   border: 0;
