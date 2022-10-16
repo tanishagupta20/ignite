@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Hackathon from '../../../assets/eventImgs/hackathon.png'
 import CP from '../../../assets/eventImgs/cp.png'
 import Esports from '../../../assets/eventImgs/esports.jpg'
@@ -6,7 +6,12 @@ import ShortFilmEdit from '../../../assets/eventImgs/shortFilmEditing.png'
 import TechTalks from '../../../assets/eventImgs/techTalk.png'
 import "./FlipPages.css";
 
-function FlipPages() {
+function FlipPages(props) {
+
+    const eventsRef = useRef()
+    useEffect(() => {
+        props.eventStateSetter(eventsRef)
+    }, [eventsRef])
 
     let currentLocation = 1;
     let numOfPapers = 6;
@@ -131,7 +136,7 @@ function FlipPages() {
 
     return (
 
-        <div className="book-container">
+        <div className="book-container" id = "events" ref = {eventsRef} >
 
             {/*  Previous Button  */}
             <button id="prev-btn" className="flip-btn">
