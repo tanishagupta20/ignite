@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Sidenav from './Sidenav.js'
+import Sidenav from './Sidenav/Sidenav.js'
 import Home from './pages/Home/Home';
 import Register from './pages/Register/Register';
 import Core from './pages/Core/Core';
