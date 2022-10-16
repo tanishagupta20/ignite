@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import Hackathon from '../../../assets/eventImgs/hackathon.png'
-import CP from '../../../assets/eventImgs/cp.png'
-import Esports from '../../../assets/eventImgs/esports.jpg'
-import ShortFilmEdit from '../../../assets/eventImgs/shortFilmEditing.png'
-import TechTalks from '../../../assets/eventImgs/techTalk.png'
+import Hackathon from '../../../assets/eventImgs/hackathon.png';
+import CP from '../../../assets/eventImgs/cp.png';
+import Esports from '../../../assets/eventImgs/esports.jpg';
+import ShortFilmEdit from '../../../assets/eventImgs/shortFilmEditing.png';
+import TechTalks from '../../../assets/eventImgs/techTalk.png';
 import "./FlipPages.css";
 
 function FlipPages(props) {
@@ -136,7 +136,7 @@ function FlipPages(props) {
 
     return (
 
-        <div className="book-container" id = "events" ref = {eventsRef} >
+        <div className="book-container" id="events" ref={eventsRef} >
 
             {/*  Previous Button  */}
             <button id="prev-btn" className="flip-btn">
@@ -151,7 +151,7 @@ function FlipPages(props) {
                 <div id="flipPage1" className="paper">
                     <div className="front">
                         <div className="front-content">
-                            <h1 style={{marginTop: 0}}>Exciting Events</h1>
+                            <h1 style={{ marginTop: 0 }}>Exciting Events</h1>
                         </div>
                     </div>
                     <div className="back">

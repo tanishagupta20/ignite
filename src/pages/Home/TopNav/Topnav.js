@@ -1,6 +1,6 @@
 import React from "react";
-import './Topnav.css'
-import CU from '../../assets/image/CU.png'
+import './Topnav.css';
+import CU from '../../../assets/logos/CU.png';
 import { Link } from "react-router-dom";
 
 export default function Topnav() {
