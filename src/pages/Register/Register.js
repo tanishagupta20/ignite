@@ -15,7 +15,7 @@ function Register() {
         events: {
             hackathon: false,
             cp: false,
-            ctf: false,
+            // ctf: false,
             esports: {
                 valorant: false,
                 bgmi: false
@@ -143,7 +143,7 @@ function Register() {
         if (values.events === {
             hackathon: false,
             cp: false,
-            ctf: false,
+            // ctf: false,
             esports: {
                 valorant: false,
                 bgmi: false
@@ -173,35 +173,35 @@ function Register() {
             <div className='formContainer'>
                 <h1 className='registerNow'>Register Now</h1>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} autoComplete="off">
 
                     <div>
-                        <label htmlFor='fullName'>Full Name<span>*</span></label><br />
-                        <input type='text' name='fullName' placeholder='Enter your full name' value={setFormValues.fullName} onChange={handleChange} />
+                        <label htmlFor='fullName'>Full Name<span>*</span></label>
+                        <input type='text' name='fullName' placeholder='Enter your full name' value={setFormValues.fullName} onChange={handleChange} /><br />
                         <p>{formErrors.fullName}</p>
                     </div>
 
                     <div>
-                        <label htmlFor='universityID'>University ID<span>*</span></label><br />
-                        <input type='text' name='universityID' placeholder='Enter your university roll number' value={setFormValues.universityID} onChange={handleChange} />
+                        <label htmlFor='universityID'>University ID<span>*</span></label>
+                        <input type='text' name='universityID' placeholder='Enter your university roll number' value={setFormValues.universityID} onChange={handleChange} /><br />
                         <p>{formErrors.universityID}</p>
                     </div>
 
                     <div>
-                        <label htmlFor='emailID'>Email ID<span>*</span></label><br />
-                        <input type='text' name='emailID' placeholder='e.g. abc@example.com' value={setFormValues.emailID} onChange={handleChange} />
+                        <label htmlFor='emailID'>Email ID<span>*</span></label>
+                        <input type='text' name='emailID' placeholder='e.g. abc@example.com' value={setFormValues.emailID} onChange={handleChange} /><br />
                         <p>{formErrors.emailID}</p>
                     </div>
 
                     <div>
-                        <label htmlFor='phoneNum'>Phone Number<span>*</span></label><br />
-                        <input type='text' name='phoneNum' placeholder='Enter your phone number' value={setFormValues.phoneNum} onChange={handleChange} />
+                        <label htmlFor='phoneNum'>Phone Number<span>*</span></label>
+                        <input type='text' name='phoneNum' placeholder='Enter your phone number' value={setFormValues.phoneNum} onChange={handleChange} /><br />
                         <p>{formErrors.phoneNum}</p>
                     </div>
 
                     <div>
-                        <label htmlFor='branch'>Branch<span>*</span></label><br />
-                        <select name='branch' onChange={handleChange} >
+                        <label htmlFor='branch'>Branch<span>*</span></label>
+                        <select name='branch' onChange={handleChange} ><br />
                             <option name='' value=''>-- Select your branch --</option>
                             <option name='cse' value='CSE'>CSE</option>
                             <option name='bca' value='BCA'>BCA</option>
@@ -211,8 +211,8 @@ function Register() {
                     </div>
 
                     <div>
-                        <label htmlFor='year'>Year<span>*</span></label><br />
-                        <select name='year' onChange={handleChange} >
+                        <label htmlFor='year'>Year<span>*</span></label>
+                        <select name='year' onChange={handleChange} ><br />
                             <option name='' value=''>-- Select your year --</option>
                             <option name='first' value='First year'>First year</option>
                             <option name='second' value='Second year'>Second year</option>
@@ -222,8 +222,8 @@ function Register() {
                     </div>
 
                     <div>
-                        <label htmlFor='gender'>Gender<span>*</span></label><br />
-                        <select name='gender' onChange={handleChange} >
+                        <label htmlFor='gender'>Gender<span>*</span></label>
+                        <select name='gender' onChange={handleChange} ><br />
                             <option name='' value=''>-- Select your gender --</option>
                             <option name='male' value='Male'>Male</option>
                             <option name='female' value='Female'>Second year</option>
@@ -232,38 +232,50 @@ function Register() {
                     </div>
 
                     <div>
-                        <label htmlFor='username'>Username<span>*</span></label><br />
-                        <input type='text' name='username' placeholder='Pick a username' value={setFormValues.username} onChange={handleChange} />
+                        <label htmlFor='username'>Username<span>*</span></label>
+                        <input type='text' name='username' placeholder='Pick a username' value={setFormValues.username} onChange={handleChange} /><br />
                         <p>{formErrors.username}</p>
                     </div>
 
                     <div>
 
-                        <label>Events<span>*</span></label><br />
+                        <label>Events<span>*</span></label><br /><br />
 
-                        <input type='checkbox' name='hackathon' value='24hr Hackathon' onChange={handleChangeEvents} />&ensp;
-                        <label htmlFor='hackathon'>24hr Hackathon</label>
+                        <div>
+                            <input type='checkbox' name='hackathon' value='24hr Hackathon' onChange={handleChangeEvents} />&ensp;
+                            <label htmlFor='hackathon'>24hr Hackathon</label>
+                        </div>
 
-                        <input type='checkbox' name='cp' value='Competitive Programming' onChange={handleChangeEvents} />&ensp;
-                        <label htmlFor='cp'>Competitive Programming</label>
+                        <div>
+                            <input type='checkbox' name='cp' value='Competitive Programming' onChange={handleChangeEvents} />&ensp;
+                            <label htmlFor='cp'>Competitive Programming</label>
+                        </div>
 
-                        <input type='checkbox' name='ctf' value='Capture the Flag' onChange={handleChangeEvents} />&ensp;
-                        <label htmlFor='ctf'>Capture the Flag</label>
+                        {/* <input type='checkbox' name='ctf' value='Capture the Flag' onChange={handleChangeEvents} />&ensp;
+                        <label htmlFor='ctf'>Capture the Flag</label> */}
 
-                        <label htmlFor='esports'>E-Sports</label>
-                        <input type='checkbox' name='valorant' value='Valorant' onChange={handleChangeEsports} />
-                        <label htmlFor='valorant'>Valorant</label>
-                        <input type='checkbox' name='bgmi' value='BGMI' onChange={handleChangeEsports} />
-                        <label htmlFor='bgmi'>BGMI</label>
+                        <div>
+                            <label htmlFor='esports'>E-Sports:</label>&ensp;&ensp;
+                            <input type='checkbox' name='valorant' value='Valorant' onChange={handleChangeEsports} />&ensp;
+                            <label htmlFor='valorant'>Valorant</label>&ensp;
+                            <input type='checkbox' name='bgmi' value='BGMI' onChange={handleChangeEsports} />&ensp;
+                            <label htmlFor='bgmi'>BGMI</label>
+                        </div>
 
-                        <input type='checkbox' name='videoEdit' value='Short Film Editing' onChange={handleChangeEvents} />
-                        <label htmlFor='videoEdit'>Short Film Editing</label>
+                        <div>
+                            <input type='checkbox' name='videoEdit' value='Short Film Editing' onChange={handleChangeEvents} />&ensp;
+                            <label htmlFor='videoEdit'>Short Film Editing</label>
+                        </div>
 
-                        <input type='checkbox' name='digitalArt' value='Digital Art' onChange={handleChangeEvents} />
-                        <label htmlFor='digitalArt'>Digital Art</label>
+                        <div>
+                            <input type='checkbox' name='digitalArt' value='Digital Art' onChange={handleChangeEvents} />&ensp;
+                            <label htmlFor='digitalArt'>Digital Art</label>
+                        </div>
 
-                        <input type='checkbox' name='quiz' value='Quiz' onChange={handleChangeEvents} />
-                        <label htmlFor='quiz'>Quiz</label>
+                        <div>
+                            <input type='checkbox' name='quiz' value='Quiz' onChange={handleChangeEvents} />&ensp;
+                            <label htmlFor='quiz'>Quiz</label>
+                        </div>
 
                         <p>{formErrors.events}</p>
 
