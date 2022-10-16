@@ -1,5 +1,5 @@
 :root {
-    --gradient: linear-gradient(90deg, #a883fa, #6135c0, #723bea);
+    --gradient: linear-gradient(90deg, #8263c2, #412283, #7b49e7);
 
 }
 
@@ -27,17 +27,16 @@
 
 .formContainer {
     margin: auto;
-    padding: 2em 4em;
+    padding: 2em 5em;
     border-radius: 10px;
     max-width: 70%;
-    /* background-color: rgba(255, 255, 255, 0.7); */
     background-color: rgb(41, 39, 39);
     backdrop-filter: blur(5px);
 }
 
 .registerNow {
     margin: auto;
-    padding: 2%;
+    padding: 1em;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
@@ -46,7 +45,6 @@
     color: #ee6352;
     line-height: .8;
     margin: 0;
-
     background-image: var(--gradient);
     background-clip: text;
     color: transparent;
@@ -60,28 +58,41 @@
 }
 
 .formContainer>form>div {
-    margin: 1em 0;
-    color : white;
-}
-
-.formContainer>form>div>label>span {
-    color: red;
+    margin: 1.2em 0;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    /* grid-template-columns: 40% 1fr; */
 }
 
 .formContainer>form>div>input[type='text'],
 .formContainer>form>div>select {
     font-size: 1rem;
+    padding: 0.3em;
+}
+
+.formContainer>form>div>select {
+    cursor: pointer;
+    margin-bottom: 1.5em;
 }
 
 .formContainer>form>div {
     font-size: 1.12rem;
 }
 
-.formContainer>form>div>p{
-    font-size: 0.9rem;
+.formContainer>form>div>div {
+    padding: 0.5em 0;
+}
+
+.formContainer>form>div>label>span {
+    color: red;
+}
+
+.formContainer>form>div>p {
+    font-size: 1rem;
     font-style: italic;
     color: red;
-    
+    padding: 0.5em;
 }
 
 .registerButton {
@@ -90,6 +101,7 @@
     cursor: pointer;
     padding: .5em 1.25em;
     font-size: 1.12rem;
+    margin-bottom: 2em;
     background: var(--gradient);
     background-size: 300%;
     background-position: left;
