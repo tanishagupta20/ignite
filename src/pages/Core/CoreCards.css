@@ -11,7 +11,7 @@ body{
 .core-container{
     /* height: 100%; */
     width : calc(100% - 50px);
-    background: linear-gradient(109.6deg, #4c6cc4 13.4%, #6e3b68 100.2%);
+    background: linear-gradient(to right, #321a49, #712c67, #0b0916);
     margin-top: 0;
 }
 
@@ -38,6 +38,7 @@ body{
     align-items: center;
     font-size: 1.5rem;
     letter-spacing: 1rem;
+    font-family: 'Lora', serif;
 }
 
 .faded-hz-line{

@@ -5,8 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(to bottom, rgb(30, 29, 88), transparent); */
-    background-color: #030331;
+    background: linear-gradient(to bottom, #030331, #1a1717);
+    /* background-color: #030331; */
     padding: 0 10em;
 }
 
