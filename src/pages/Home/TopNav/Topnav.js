@@ -1,6 +1,6 @@
 import React from "react";
-import './Topnav.css'
-import CU from '../../assets/image/CU.png'
+import './Topnav.css';
+import CU from '../../../assets/logos/CU.png';
 import { Link } from "react-router-dom";
 
 export default function Topnav() {
@@ -10,7 +10,7 @@ export default function Topnav() {
                 <img src={CU} className="chitkara-logo" height="48rem" />
             </div>
             <div className="register-hp">
-                <Link className="register-link" to="#">
+                <Link className="register-link" to="/register">
                     <button className='registerButton'>Register</button>
                 </Link>
             </div>

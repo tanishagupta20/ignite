@@ -4,8 +4,7 @@
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    /* background-color: powderblue; */
-    background: linear-gradient(to bottom, #030331, rgb(139, 17, 17));
+    background: linear-gradient(to bottom, #1a1717, rgb(37, 1, 1), rgb(2, 2, 55));
 }
 
 /* Book */
@@ -40,7 +39,7 @@
 .front {
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid powderblue;
+    border-left: 3px solid black;
 }
 
 .back {
@@ -116,17 +115,17 @@
     z-index: 1;
 }
 
-.back-content>img{
+.back-content>img {
     max-height: 200px;
     width: 300px;
 }
 
-.front-content>h1{
+.front-content>h1 {
     text-align: center;
     padding: 1em 0;
     margin-top: -2em;
 }
 
-.front-content>p{
+.front-content>p {
     text-align: justify;
 }

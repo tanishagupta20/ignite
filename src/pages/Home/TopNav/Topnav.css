@@ -1,10 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 .top-nav-container{
-    background-color: black;
+    background-color: transparent;
     height : 3.5rem;
     display: flex;
     justify-content: space-between;
@@ -23,11 +18,13 @@
 .register-hp{
     display: flex;
     justify-content: center;
+    cursor: pointer;
+    z-index: 50;
 }
 
 .register-link{
     text-decoration: none;
-    padding-right : 10px;
+    padding-right : 16px;
     padding-top: 12px;
     font-size: 1.3rem;
     color : #fff;

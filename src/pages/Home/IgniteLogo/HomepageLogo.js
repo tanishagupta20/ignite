@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import './HomepageLogo.css'
-import Ignite from '../../assets/logos/upscaled_ignite.png'
-import * as THREE from 'three'
-import StarImg from './star.png'
+import './HomepageLogo.css';
+import Ignite from '../../../assets/logos/upscaled_ignite.png';
+import StarImg from '../../../assets/otherImgs/star.png';
+import * as THREE from 'three';
 
 
 export default function HomepageLogo() {
@@ -74,13 +74,6 @@ export default function HomepageLogo() {
         requestAnimationFrame(animate);
     }
     useEffect(() => {
-        // const script = document.createElement("script")
-        // script.src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.145.0/three.min.js"
-        // script.onload = () => {
-        //     setLoading(false)
-        //     init()
-        // }
-        // document.body.appendChild(script)
         init()
         return () => {
             setLoading(true)
