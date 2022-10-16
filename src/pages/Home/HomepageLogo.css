@@ -60,3 +60,34 @@
     font-size: 1.35rem;
     letter-spacing: 0.8em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(37, 36, 36);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(82, 67, 117);
+    border: 0.7px solid #7255af;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #7255af;
+    border: 0.7px solid silver;
+}
