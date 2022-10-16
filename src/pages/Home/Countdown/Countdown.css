@@ -2,7 +2,7 @@
 @font-face {
     font-family: "Digital7";
     src: local("Digital7"),
-     url("../../fonts/digital-7.ttf") format("truetype");
+     url("../../../fonts/digital-7.ttf") format("truetype");
     font-weight: bold;
 }
 
@@ -46,6 +46,7 @@
 .calc-font{
     font-family: Digital7;
     font-size: 3rem;
+    letter-spacing: 5px;
 }
 
 .time-colon{

@@ -1,12 +1,10 @@
 .about-container{
     background-color: black;
-    /* height : 30vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom, #030331, #1a1717);
-    /* background-color: #030331; */
     padding: 0 10em;
 }
 
@@ -18,8 +16,6 @@
 }
 
 .about-content{
-    /* padding-right: 80px;
-    padding-left: 50px; */
     padding-top: 30px;
     padding-bottom: 30px;
     color: white;
