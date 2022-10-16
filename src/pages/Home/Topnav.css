@@ -8,6 +8,7 @@
     height : 3.5rem;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .chitkara-logo-div{
@@ -23,6 +24,7 @@
 .register-hp{
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .register-link{

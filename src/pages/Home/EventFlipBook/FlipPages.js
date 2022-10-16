@@ -146,7 +146,7 @@ function FlipPages() {
                 <div id="flipPage1" className="paper">
                     <div className="front">
                         <div className="front-content">
-                            <h1 style={{marginTop: 0}}>Events</h1>
+                            <h1 style={{marginTop: 0}}>Exciting Events</h1>
                         </div>
                     </div>
                     <div className="back">
