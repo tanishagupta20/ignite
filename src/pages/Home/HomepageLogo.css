@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -14,7 +14,7 @@
     z-index: -10;
 }
 
-.main-logo-container{
+.main-logo-container {
     display: flex;
     background-color: transparent;
     width: calc(100% - 20px);
@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.logo-name-container{
+.logo-name-container {
     display: flex;
     height: 40vh;
     width: 50vw;
@@ -34,7 +34,7 @@
     margin-top: -10em;
 }
 
-.img-ignite{
+.img-ignite {
     margin-right: -35px;
 }
 
@@ -42,7 +42,7 @@
     background-color: #ff0400;
 } */
 
-.ignite-name{
+.ignite-name {
     font-size: 7rem;
     /* margin-left: -35px; */
     color: #fff;
@@ -50,44 +50,40 @@
     /* color : violet */
     background-image: linear-gradient(to right, #b896ff, #4745ef);
     background-clip: text;
-    color : transparent;
+    color: transparent;
     -webkit-text-stroke: 0.6px white;
 }
 
-.ignite-desc{
+.ignite-desc {
     color: #fff;
     text-align: center;
     font-size: 1.35rem;
     letter-spacing: 0.8em;
 }
 
+/* custom scrollbar */
 
-
-
-
-
-
-
-
-
-
-
-
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0.5em;
 }
 
-::-webkit-scrollbar-track{
-    background: rgb(37, 36, 36);
+::-webkit-scrollbar-track {
+    background: #252424;
 }
 
-::-webkit-scrollbar-thumb{
-    background: rgb(82, 67, 117);
+::-webkit-scrollbar-thumb {
+    background: #524375;
     border: 0.7px solid #7255af;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     background: #7255af;
     border: 0.7px solid silver;
+}
+
+@supports(scrollbar-color: red blue) {
+    * {
+        scrollbar-color: #524375 #252424;
+        scrollbar-width: thin;
+    }
 }
