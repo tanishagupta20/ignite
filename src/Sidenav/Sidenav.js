@@ -20,7 +20,7 @@ function Sidenav(props) {
             <div></div>
             <div className={inactive ? 'nav-container' : 'nav-container active'}>
                 <div className='burger-icon-container'>
-                    <span className='burger' onClick={toggleSideNav}><i class="bi bi-list"></i></span>
+                    <span className='burger' onClick={toggleSideNav}><i className="bi bi-list"></i></span>
                 </div>
 
                 <div className='faded-hz-line'></div>
@@ -34,7 +34,7 @@ function Sidenav(props) {
                             }} to='/' title={inactive ? 'Home' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }} className="home-icon">
                                     <div className='menu-icon'>
-                                        <i class="bi bi-house"></i>
+                                        <i className="bi bi-house"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Home</span>
                                 </li>
@@ -48,7 +48,7 @@ function Sidenav(props) {
                             }} title={inactive ? 'About' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
                                     <div className='menu-icon'>
-                                        <i class="bi bi-info-square"></i>
+                                        <i className="bi bi-info-square"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>About</span>
                                 </li>
@@ -62,7 +62,7 @@ function Sidenav(props) {
                             }} title={inactive ? 'Events' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
                                     <div className='menu-icon'>
-                                        <i class="bi bi-flag"></i>
+                                        <i className="bi bi-flag"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Events</span>
                                 </li>
@@ -84,7 +84,7 @@ function Sidenav(props) {
                             <Link className="nav-items-link" onClick={toggleNav} to='/core' target = "_blank" title={inactive ? 'Team' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
                                     <div className='menu-icon'>
-                                        <i class="bi bi-people"></i>
+                                        <i className="bi bi-people"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Team</span>
                                 </li>
@@ -95,7 +95,7 @@ function Sidenav(props) {
                             <Link className="nav-items-link" onClick={toggleNav} to='/register' target = "_blank" title={inactive ? 'Register' : ''}>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }}>
                                     <div className='menu-icon'>
-                                        <i class="bi bi-journal-check"></i>
+                                        <i className="bi bi-journal-check"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>Register</span>
                                 </li>
@@ -112,7 +112,7 @@ function Sidenav(props) {
                             <Link className="nav-items-link" onClick={toggleNav} to='/'>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }} className="insta-icon">
                                     <div className='insta-icon'>
-                                        <i class="bi bi-instagram"></i>
+                                        <i className="bi bi-instagram"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>@ignite</span>
                                 </li>
@@ -123,7 +123,7 @@ function Sidenav(props) {
                             <Link className="nav-items-link" onClick={toggleNav} to='/'>
                                 <li style={!inactive ? { width: "210px" } : { width: "20px" }} className="linkedin-icon">
                                     <div className='linkedin-icon'>
-                                        <i class="bi bi-linkedin"></i>
+                                        <i className="bi bi-linkedin"></i>
                                     </div>
                                     <span className={!inactive ? 'menu-name' : 'hidden'}>/ignite</span>
                                 </li>
