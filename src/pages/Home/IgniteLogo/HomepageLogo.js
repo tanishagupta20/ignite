@@ -36,7 +36,6 @@ export default function HomepageLogo() {
         }
 
         let sprite = new THREE.TextureLoader().load(StarImg);
-        console.log(sprite);
         let starMaterial = new THREE.PointsMaterial({
             color: 0xaaaaaa,
             size: 0.65,

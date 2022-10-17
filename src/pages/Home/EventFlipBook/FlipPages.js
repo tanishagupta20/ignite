@@ -140,7 +140,7 @@ function FlipPages(props) {
 
             {/*  Previous Button  */}
             <button id="prev-btn" className="flip-btn">
-                <i class="bi bi-arrow-left-circle-fill"></i>
+                <i className="bi bi-arrow-left-circle-fill"></i>
             </button>
 
 
@@ -157,7 +157,7 @@ function FlipPages(props) {
                     <div className="back">
                         <div className="back-content">
                             {/* hackathon image */}
-                            <img src={Hackathon} />
+                            <img src={Hackathon} alt='students participating in a hackathon' />
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,7 @@ function FlipPages(props) {
                     <div className="back">
                         <div className="back-content">
                             {/* CP image */}
-                            <img src={CP} />
+                            <img src={CP} alt='students participating in a competitive programming event' />
                         </div>
                     </div>
                 </div>
@@ -192,7 +192,7 @@ function FlipPages(props) {
                     <div className="back">
                         <div className="back-content">
                             {/* E-Sports image */}
-                            <img src={Esports} />
+                            <img src={Esports} alt='an esports event in progess' />
                         </div>
                     </div>
                 </div>
@@ -209,7 +209,7 @@ function FlipPages(props) {
                     <div className="back">
                         <div className="back-content">
                             {/* Short Film Editing image */}
-                            <img src={ShortFilmEdit} />
+                            <img src={ShortFilmEdit} alt='video editing' />
                         </div>
                     </div>
                 </div>
@@ -228,7 +228,7 @@ function FlipPages(props) {
                     <div className="back">
                         <div className="back-content">
                             {/* Tech Talks image */}
-                            <img src={TechTalks} />
+                            <img src={TechTalks} alt='a person delivering a talk' />
                         </div>
                     </div>
                 </div>
@@ -253,7 +253,7 @@ function FlipPages(props) {
 
             {/*  Next Button  */}
             <button id="next-btn" className="flip-btn" >
-                <i class="bi bi-arrow-right-circle-fill"></i>
+                <i className="bi bi-arrow-right-circle-fill"></i>
             </button>
         </div>
     );
