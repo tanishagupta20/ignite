@@ -88,7 +88,7 @@ export default function HomepageLogo() {
                     <img src={Ignite} height="180rem" width="180rem" />
                 </div>
                 <div className="ignite-text-cont">
-                    <p className="ignite-name">TECHLONE</p>
+                    <p className="ignite-name">IGNITE</p>
                     <p className="ignite-desc">TECHFEST 2K22</p>
                 </div>
             </div>
